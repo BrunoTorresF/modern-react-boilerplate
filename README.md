@@ -5,13 +5,16 @@ Basic boilerplate for React 16, Webpack 4, React Router 4
 
 * React 16
 * Webpack 4
+* React Router 4
 * Babel
 * Staging ES Next Features
+* ESLint enabled
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
+* `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git`
 * cd modern-react-boilerplate
 * npm install
-* npm start
+* npm run dev
+* npm run start-dev
 * visit `http://localhost:3000/`
