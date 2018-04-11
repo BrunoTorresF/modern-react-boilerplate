@@ -1,0 +1,19 @@
+{
+    "env": {
+       "browser": true,
+       "node": true,
+       "es6": true,
+       "commonjs": true
+    },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "extends": [ "eslint:recommended", "plugin:react/recommended" ],
+  "plugins": [ "react" ],
+  "rules": {
+    "no-console": "off",
+    "strict": ["error", "global"],
+    "curly": "warn"
+    }
+}
