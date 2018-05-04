@@ -9,9 +9,7 @@
   "scripts": {
     "dev": "webpack --config webpack.config.js --watch --mode development",
     "start-dev": "nodemon server/index.js",
-    "start": "node server/index.js",
-    "prod": "NODE_ENV=production node server/index.js",
-    "postinstall": "webpack --config webpack.config.prod.js --mode production"
+    "build": "webpack --config webpack.config.prod.js --mode production"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
