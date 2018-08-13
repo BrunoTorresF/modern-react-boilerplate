@@ -11,10 +11,14 @@ Basic boilerplate for React 16, Webpack 4, React Router 4
 * ESLint enabled
 
 ## Installation
-
 * `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git`
 * cd modern-react-boilerplate
 * npm install
+
+### FrontEnd Only Development
+npm run frontend
+
+### Fullstack Development
 * npm run dev
 * npm run start-dev
 * visit `http://localhost:3000/`

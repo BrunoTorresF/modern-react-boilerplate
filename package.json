@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack --config webpack.config.js --watch --mode development",
+    "frontend": "webpack-dev-server --hot --mode development",
     "start-dev": "nodemon server/index.js",
     "build": "webpack --config webpack.config.prod.js --mode production"
   },
@@ -31,9 +32,11 @@
     "eslint-plugin-react": "^7.10.0",
     "node-sass": "^4.9.2",
     "postcss-loader": "^2.1.6",
+    "react-hot-loader": "^4.3.4",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.16.0",
-    "webpack-cli": "^2.0.14"
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.5"
   }
 }
