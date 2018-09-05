@@ -1,14 +1,13 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/env",
       {
         "loose": true,
         "modules": false
       }
     ],
-    "react",
-    "stage-2"
+    "@babel/react"
   ],
   "plugins": ["react-hot-loader/babel"]
 }
