@@ -9,12 +9,25 @@ A minimal React project boilerplate suitable for quick app prototyping (front-en
 - Webpack 4
 - React Router 4
 - Babel 7
-- ESLint enabled
+- ESLint enabled (see instructions below for set-up)
 - MySQL or MongoDB
 
 ## Installation
 
+### Installing ESLint
+
+If you don't have ESLint already install, you can install ESLint and the required dependencies with:
+`npm i -g eslint eslint-config-airbnb eslint-plugin-node babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y`
+
+### For Babel 7
+
 - `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git`
+- cd modern-react-boilerplate
+- `npm install`
+
+### For Babel 6
+
+- `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git -b babel-6`
 - cd modern-react-boilerplate
 - `npm install`
 
