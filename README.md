@@ -1,24 +1,43 @@
 # modern-react-boilerplate
-Basic boilerplate for React 16, Webpack 4, React Router 4
+
+Basic boilerplate for React 16, Webpack 4, React Router 4.
+A minimal React project boilerplate suitable for quick app prototyping (front-end only option) or as a starting point for app development (full-stack option).
 
 ## Features
 
-* React 16
-* Webpack 4
-* React Router 4
-* Babel
-* Staging ES Next Features
-* ESLint enabled
+- React >16.4
+- Webpack 4
+- React Router 4
+- Babel 6
+- ESLint enabled (see instructions below for set-up)
+- MySQL or MongoDB
 
 ## Installation
-* `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git`
-* cd modern-react-boilerplate
-* npm install
+
+### Installing Global Dependencies
+
+If you don't have ESLint and nodemon already installed, you can install them, along with other required dependencies with:
+`npm i -g eslint eslint-config-airbnb eslint-plugin-node babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y nodemon`
+
+### For Babel 7
+
+- `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git`
+- cd modern-react-boilerplate
+- `npm install`
+
+### For Babel 6
+
+- `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git -b babel-6`
+- cd modern-react-boilerplate
+- `npm install`
 
 ### FrontEnd Only Development
-npm run frontend
+
+- Start Webpack Dev Server with `npm run frontend`
 
 ### Fullstack Development
-* npm run dev
-* npm run start-dev
-* visit `http://localhost:3000/`
+
+- Start Webpack with `npm run dev`
+- Start nodemon with `npm run start-dev`
+- visit `http://localhost:3000/`
+- edit your database connection details and delete the database file you're **not** using
