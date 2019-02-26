@@ -1,7 +1,7 @@
-/* If using MongoDB, install mongoose with 
+/* If using MongoDB, install mongoose with
  * npm install -S mongoose  or
  * yarn add mongoose
-*/
+ */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
