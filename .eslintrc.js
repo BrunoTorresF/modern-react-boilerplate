@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
+  extends: ['airbnb', 'prettier', 'prettier/react'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -28,5 +28,38 @@ module.exports = {
     'no-console': 'off',
     strict: ['error', 'global'],
     curly: 'warn',
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'all',
+      },
+    ],
+    'arrow-body-style': [2, 'as-needed'],
+    'consistent-return': 0,
+    'react/prefer-stateless-function': 0,
+    'react/require-default-props': 0,
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx'],
+      },
+    ],
+    radix: 0,
+    'no-shadow': [
+      2,
+      {
+        hoist: 'all',
+        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
+      },
+    ],
+    quotes: [
+      2,
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true,
+      },
+    ],
+    'import/no-extraneous-dependencies': 0,
   },
 };

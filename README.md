@@ -14,11 +14,6 @@ A minimal React project boilerplate suitable for quick app prototyping (front-en
 
 ## Installation
 
-### Installing ESLint Globally (optional)
-
-If you don't have ESLint already install, you can install ESLint and the required dependencies with:
-`npm i -g eslint eslint-config-airbnb eslint-plugin-node babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y prettier eslint-config-prettier eslint-plugin-prettier`
-
 ### For Babel 7 (includes local eslint & prettier)
 
 - `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git`
@@ -41,3 +36,8 @@ If you don't have ESLint already install, you can install ESLint and the require
 - Start nodemon with `npm run start-dev`
 - visit `http://localhost:3000/`
 - edit your database connection details and delete the database file you're **not** using
+
+### Installing ESLint Globally (optional)
+
+If you don't have ESLint already install, you can install ESLint and the required dependencies with:
+`npm i -g eslint eslint-config-airbnb eslint-plugin-node babel-eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y prettier eslint-config-prettier eslint-plugin-prettier`
