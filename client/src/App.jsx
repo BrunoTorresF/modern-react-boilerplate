@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//RHL only for front end development
+// RHL only for front end development
 import { hot } from 'react-hot-loader';
 
 class App extends Component {
@@ -7,5 +7,5 @@ class App extends Component {
     return <div>Put your phone away</div>;
   }
 }
-//hot export works with RHL. Remove when starting fullstack integration
+// hot export works with RHL. Remove when starting fullstack integration
 export default hot(module)(App);
