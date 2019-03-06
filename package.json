@@ -10,7 +10,7 @@
     "dev": "webpack --config webpack.config.js --watch --mode development",
     "frontend": "webpack-dev-server --hot --mode development",
     "start-dev": "nodemon server/index.js",
-    "build": "webpack --config webpack.prod.config.js --mode production"
+    "build": "webpack --config webpack.prod.js --mode production"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
