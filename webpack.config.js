@@ -14,11 +14,6 @@ module.exports = {
         exclude: /node_modules|packages/,
       },
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: ['eslint-loader'],
-      },
-      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
