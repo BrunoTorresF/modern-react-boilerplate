@@ -26,6 +26,12 @@ A minimal React project boilerplate suitable for quick app prototyping (front-en
 - cd modern-react-boilerplate
 - `npm install`
 
+### If you don't need/want ESLint/Prettier integration
+
+- `git clone https://github.com/BrunoTorresF/modern-react-boilerplate.git -b no-eslint`
+- cd modern-react-boilerplate
+- `npm install`
+
 ### FrontEnd Only Development
 
 - Start Webpack Dev Server with `npm run frontend`
