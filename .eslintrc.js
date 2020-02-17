@@ -1,15 +1,21 @@
 module.exports = {
-	extends: ['airbnb', 'prettier', 'prettier/react'],
+	extends: ['airbnb', 'plugin:@typescript-eslint/recommended', 'prettier', 'prettier/react'],
 	parserOptions: {
-		ecmaVersion: 2018,
+		ecmaVersion: 2019,
 		sourceType: 'module',
 	},
-	parser: 'babel-eslint',
-	plugins: ['react', 'react-hooks', 'prettier'],
+	parser: '@typescript-eslint/parser',
+	plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
 	settings: {
 		react: {
 			version: '^16.4.2',
-		},
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {},
+    },
 	},
 	env: {
 		browser: true,
@@ -41,7 +47,7 @@ module.exports = {
 		'react/jsx-filename-extension': [
 			1,
 			{
-				extensions: ['.js', '.jsx'],
+				extensions: ['.ts', '.tsx', '.js', '.jsx'],
 			},
 		],
 		radix: 0,
@@ -62,6 +68,8 @@ module.exports = {
 		],
 		'import/no-extraneous-dependencies': 0,
 		'react-hooks/rules-of-hooks': 'error',
-		'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'warn',
+    '@typescript-eslint/indent': [2, 2],
+    'import/extensions': [1, "never", { ignorePackages: true }]
 	},
 };
