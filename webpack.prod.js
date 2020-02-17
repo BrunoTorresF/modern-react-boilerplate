@@ -2,20 +2,20 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: ['./client/src/Index.js'],
+  entry: ['./client/src/Index.tsx'],
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, 'client/dist'),
+    path: path.resolve(__dirname, 'client/dist'),
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        use: ['babel-loader'],
+        test: /\.tsx?$/,
+        use: ['ts-loader'],
         exclude: /node_modules|packages/,
       },
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: ['eslint-loader'],
       },
@@ -26,7 +26,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
   devtool: 'source-map',
   plugins: [
