@@ -1,6 +1,7 @@
 /* eslint global-require: 0 */
 
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: ['./client/src/Index.js'],
@@ -50,17 +51,35 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
+      },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, 'client/dist/index.html'),
+    }),
+  ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.scss', '.css'],
   },
 
   devServer: {
     contentBase: './client/dist',
+    publicPath: '/',
     host: 'localhost',
     historyApiFallback: true,
     // respond to 404s with index.html
     inline: true,
+    hot: true,
   },
 };
