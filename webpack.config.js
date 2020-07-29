@@ -1,6 +1,8 @@
 /* eslint global-require: 0 */
+/* typescript-eslint no-var-requires: 0 */
 
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: ['./client/src/Index.tsx'],
@@ -52,15 +54,22 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, 'client/dist/index.html'),
+    }),
+  ],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.js', '.jsx', '.scss', '.css'],
   },
 
   devServer: {
     contentBase: './client/dist',
+    publicPath: '/',
     host: 'localhost',
     historyApiFallback: true,
     // respond to 404s with index.html
     inline: true,
+    hot: true,
   },
 };
